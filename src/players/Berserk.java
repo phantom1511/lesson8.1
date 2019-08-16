@@ -12,6 +12,6 @@ public class Berserk extends Hero {
     @Override
     public void useSuperPower(Hero[] heroes, Boss boss) {
         int randomShoot = 2 + (int) (Math.random() * 4);
-        heroes[3].setDamage(getDamage() + randomShoot);
+        heroes[3].setDamage(getDamage() * randomShoot);
     }
 }
